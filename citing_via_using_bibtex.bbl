@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{andrew}
+N.~G. Andrew.
+\newblock {\em Stanford machine learning}.
+\newblock Stanford University, 2018.
+
+\bibitem{arora2021survey}
+Saurabh Arora and Prashant Doshi.
+\newblock {\em A survey of inverse reinforcement learning: Challenges, methods
+  and progress}, volume 297.
+\newblock Elsevier, 2021.
+
+\end{thebibliography}

@@ -1,0 +1,22 @@
+\documentclass[10pt]{article}
+
+\usepackage{subfiles} % --- including files inside another file
+
+\author{Nima Poshtiban}
+\date{\today}
+\title{Displaying code with Verbatim}
+
+\begin{document}
+\maketitle
+
+
+\section{Verbatim}
+Here is how to write a fraction in \LaTeX: \verb"\frac{num}{denum}" % ---- delimiler is the letter that comes after \verb, for this example " is the delimiter, and verb has closed with " 
+\\This is how to assign a variable in Go% ---- displaying code with Verbatim
+\begin{verbatim}
+foobar := "foobar"
+\end{verbatim}
+
+\subfile{SecondFile} % --- including SecondFile as a subfile
+
+\end{document}

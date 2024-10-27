@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath} %--- using \eqref
+\usepackage{hyperref} % ---enabling inside links and referencing links outside
+
+\author{Nima Poshtiban}
+\date{\today}
+\title{References and Links}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\section{LaTeX}\label{latex-sec} % using label for referencing
+Latex is the best software.\newline A second degree
+polynomial is often on the form 
+\begin{equation}
+\label{polynomial_eq}
+	f(x) = ax^{2} + bx + c
+\end{equation}
+find more on \href{https://en.wikipedia.org/wiki/Quadratic_equation}{Wikipedia} % --- referencing outside source {url}{name of your choice} 
+% \url only shows the webpage address and cannot be customize
+\newpage
+
+\section{Microsoft Word}
+Unlike section \ref{latex-sec} it is not awesome rather bothersome. 
+Learn more on Page \pageref{latex-sec} %-- referencing the page for the specified label
+\newpage
+\section{Writing by Hand}
+Well it is also a good solution.
+you can easily solve problems by using \eqref{polynomial_eq}  equation % referencing equation using amsmath
+\end{document}

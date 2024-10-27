@@ -1,0 +1,27 @@
+\documentclass[10pt,a4paper]{article}
+
+%---- making a command
+% \newcommand{command name}{definition}
+\newcommand{\akrabazzi}{T(n)=\Theta{\left(n^{p}\cdot \left(\int_{1}^{n}{\frac{f(x)}{x^{p+1}}\,dx}\right)\right)}}
+% --- custom command for akra-bazzi integral
+\newcommand{\nima}{Nima Poshtiban}
+
+% ---- arguments for custom commands
+%\newcommand{command name}[number of args]{definition}
+\newcommand{\intln}[2]{\int_{#1}^{#2}{\ln(x)\,dx}}
+
+
+\author{Nima Poshtiban}
+\date{\today}
+\title{Custom Commands}
+
+\begin{document}
+\maketitle
+
+\section{Custom Commands made by {\nima} }
+This is the famous Akra-Bazzi solution
+\[\akrabazzi\] \\
+This is an example of custom command with arguments
+\[\intln{-\infty}{+\infty}\]
+
+\end{document}

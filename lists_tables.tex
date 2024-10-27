@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate} %---- using Roman numbers
+\title{Commands vs Environments}
+\author{Nima Poshtiban}
+\date{\today}
+
+\begin{document}
+\maketitle	
+\begin{abstract}
+	This is an abstract for the document.
+\end{abstract}
+
+%--------Bullet list
+\begin{itemize}
+	\item[-] Bread % insert "-" instead of bullet point
+	\item Milk
+	\item Apple
+	\item Pizza
+	% nesting list 
+	\begin{itemize}
+		\item Cheese
+		\item meat
+	\end{itemize}
+	% end of nesting
+\end{itemize}
+%--------- end
+\section{Name of the section}
+Some text with footnote \footnote[2]{This is a footnote}
+
+% ----- ordered list 
+\begin{enumerate}[I] % ---- optional argument for using Roman numbers 
+	\item Pizza
+	\item Kebab
+	\item Pasta
+	% ---- nested ordered list
+	\begin{enumerate}
+		\item Spaghetti
+		\item Lasagna
+	\end{enumerate}
+	%---- end of ordered list
+\end{enumerate}
+% end of ordered list
+
+Some Text Above the table
+% ----- making a table---
+\begin{table}[h] % h -> place table under the above text
+\centering % centering the table
+\begin{tabular}{|r| c |l|}
+\hline
+% inserting rows
+First Col & Second Col & Third Col\\\hline % ---- hline inserts a vertical line
+Second row & second row & second row 
+\end{tabular}
+\caption{Here is a table}
+
+\end{table}
+Some Text Below the Table
+% ---- end of table -------
+
+
+\end{document}

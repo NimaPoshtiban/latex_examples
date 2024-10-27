@@ -1,0 +1,49 @@
+\documentclass{beamer} %--- beamer is used for presenations
+
+\usetheme{Hannover} % ==== changing presentation theme to use "Hannover" theme instead
+\usecolortheme{wolverine} %----- changing slide color
+
+
+\title{Presentation using Beamer}
+\author{Nima Poshtiban}
+\date{\today}
+\institute{Azad University of Qom}
+\begin{document}
+
+\frame{\titlepage} % --- create a slide for title
+
+
+\begin{frame}{Content} % --- each frame creates a seprate slide
+	\tableofcontents
+\end{frame}
+
+
+\section{Title} %---- using sections for table of contents
+\begin{block}{Theme}  % ---- plain block 
+	Here are different things related.
+\end{block}\pause %--- indents the blocks using lines
+\begin{alertblock}{Important} % ---- alert block type
+	This is an alert block, blocks have many variants 
+\end{alertblock}
+\begin{example}
+	 This is an example block.
+\end{example}{Optional title for example block}
+
+
+\begin{frame}{Intro} 
+	This presentation is written in \alert{\LaTeX} % highlighting \Latex 
+\end{frame}
+
+
+\section{Slide one}
+\begin{frame}{Slide one}
+	Some Text goes here.\\
+	Some Text goes here.\\Some Text goes here.\\Some Text goes here.\\Some Text goes here.\\
+\end{frame}
+
+\section{Slide two}
+\begin{frame}{Slide two}
+	Some Text goes here.\\
+	Some Text goes here.\\Some Text goes here.\\Some Text goes here.\\Some Text goes here.\\
+\end{frame}
+\end{document}

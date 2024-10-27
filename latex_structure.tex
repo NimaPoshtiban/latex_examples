@@ -1,0 +1,43 @@
+\documentclass{article}
+%------------ Packages ----------------
+\usepackage{csquotes} % for quotations
+\usepackage{blindtext} % generates random text
+\usepackage{comment} % Make multiline comments
+%-------------Meta information ------------
+\title{structure of a latex document}
+\author{Nima Poshtiban}
+\date{\today} % insert the today's date
+% --------- End of Preamble ---------------
+
+\begin{comment}
+	----------------------------
+	This is a multi-line comment
+	----------------------------
+	----------------------------
+\end{comment}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\section{Example of a section in \LaTeX}
+\textbf{\textit{This}} is where the \underline{actual} text goes
+
+\subsection{This is a subsection with a quote from an external package}
+subsection goes here
+
+He said: \textquote{I Hate Pepsi}
+
+\section{using paragraphs}
+
+This is the first paragraph
+\par This is the second paragraph \newline
+calculating Future with compound interest \newline
+$\mathparagraph$ $F=P*\left(i\%+1\right)^{n}$
+\section{The Second section}
+\blindtext %this is a comment
+
+
+
+\end{document}
